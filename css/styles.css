@@ -23,6 +23,9 @@ body {
     font-family: "Spartan", sans-serif;
     font-size: 1rem;
     line-height: 1.618;
+    background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
 }
 
 @media (min-width: 1100px) {
@@ -31,6 +34,9 @@ body {
         align-items: center;
         justify-content: center;
         height: 100vh;
+        background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
     }
 }
 
