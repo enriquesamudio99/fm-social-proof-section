@@ -25,7 +25,7 @@ body {
     line-height: 1.618;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
     body {
         display: flex;
         align-items: center;
@@ -50,8 +50,12 @@ p {
     margin: 0 auto;
 }
 
-.superior-content {
-
+@media (min-width: 1100px) {
+    .superior-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
 }
 
 .info {
@@ -59,10 +63,24 @@ p {
     text-align: center;
 }
 
+@media (min-width: 1100px) {
+    .info {
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
 .info .title {
     color: var(--veryDarkMagenta);
     font-weight: 700;
     line-height: 1;
+}
+
+@media (min-width: 1100px) {
+    .info .title {
+        font-size: 40px;
+        width: 60%;
+    }
 }
 
 .info .description {
@@ -72,6 +90,12 @@ p {
     font-size: 0.875rem;
 }
 
+@media (min-width: 1100px) {
+    .info .description {
+        width: 80%;
+    }
+}
+
 .reviews {
     margin-top: 2.5rem;
     display: flex;
@@ -79,10 +103,36 @@ p {
     gap: 1rem;
 }
 
+@media (min-width: 1100px) {
+    .reviews {
+        margin-top: 0;
+        align-items: flex-end;
+    }
+}
+
 .review {
     background-color: var(--lightGrayishMagenta);
     border-radius: 1rem;
     padding: 1rem;
+}
+
+@media (min-width: 1100px) {
+    .review {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 2rem;
+        gap: 2rem;
+        width: 450px;
+    }
+
+    .review:nth-child(2) {
+        margin-right: 2.5rem;
+    }
+
+    .review:nth-child(1) {
+        margin-right: 5rem;
+    }
 }
 
 .review-stars {
@@ -100,6 +150,13 @@ p {
     font-size: 0.875rem;
 }
 
+@media (min-width: 1100px) {
+    .review-text {
+        margin-top: 0;
+        line-height: 1;
+    }
+}
+
 .testimonials {
     margin: 3rem 0;
     display: flex;
@@ -107,10 +164,31 @@ p {
     gap: 1rem;
 }
 
+@media (min-width: 1100px) {
+    .testimonials {
+        margin: 4.5rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
 .testimonial {
     background-color: var(--veryDarkMagenta);
     border-radius: 1rem;
     padding: 2rem;
+}
+
+@media (min-width: 1100px) {
+
+    .testimonial:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .testimonial:nth-child(3) {
+        margin-top: 2rem;
+    }
 }
 
 .user {
