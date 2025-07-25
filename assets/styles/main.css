@@ -178,8 +178,22 @@ a {
   }
 }
 
+@media (min-width: 80rem) {
+  .hero__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .hero__left {
   text-align: center;
+}
+
+@media (min-width: 80rem) {
+  .hero__left {
+    text-align: left;
+    width: 27.8125rem;
+  }
 }
 
 @media (min-width: 40rem) {
@@ -204,6 +218,12 @@ a {
   }
 }
 
+@media (min-width: 80rem) {
+  .hero__title {
+    padding: 0;
+  }
+}
+
 .hero__subtitle {
   margin-top: 1rem;
   font: var(--txt-preset-3);
@@ -217,6 +237,13 @@ a {
   }
 }
 
+@media (min-width: 80rem) {
+  .hero__subtitle {
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+}
+
 .hero__reviews {
   display: flex;
   flex-direction: column;
@@ -226,6 +253,12 @@ a {
 @media (min-width: 40rem) {
   .hero__reviews {
     width: 28.3125rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero__reviews {
+    width: 33.875rem;
   }
 }
 
@@ -251,6 +284,20 @@ a {
     justify-content: center;
     gap: 2rem;
     padding: 1rem 2.2188rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero__review {
+    width: 27.875rem;
+  }
+
+  .hero__review:nth-child(2) {
+    align-self: center;
+  }
+
+  .hero__review:nth-child(3) {
+    align-self: flex-end;
   }
 }
 
@@ -284,6 +331,7 @@ a {
 
 @media (min-width: 80rem) {
   .testimonials {
+    margin-top: 4rem;
     margin-bottom: 0;
   }
 }
@@ -295,15 +343,39 @@ a {
   }
 }
 
+@media (min-width: 80rem) {
+  .testimonials__container {
+    width: 100%;
+  }
+}
+
 .testimonials__grid {
   display: grid;
   gap: 1rem;
+}
+
+@media (min-width: 80rem) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+    align-items: flex-start;
+  }
 }
 
 .testimonial {
   background-color: var(--clr-purple-900);
   border-radius: .5rem;
   color: var(--clr-white);
+}
+
+@media (min-width: 80rem) {
+  .testimonial:nth-child(2) {
+    margin-top: 1rem;
+  }
+
+  .testimonial:nth-child(3) {
+    margin-top: 2rem;
+  }
 }
 
 .testimonial__container {
@@ -313,6 +385,12 @@ a {
 @media (min-width: 40rem) {
   .testimonial__container {
     padding: 2.6875rem 2.5938rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .testimonial__container {
+    padding: 2rem;
   }
 }
 
