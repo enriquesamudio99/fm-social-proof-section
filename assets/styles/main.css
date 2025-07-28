@@ -128,6 +128,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top center, bottom center;
+  background-size: 23.375rem 14.5rem, 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: 80rem) {
+  .main {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-size: 36.375rem 22.625rem, 67.8125rem 42.0625rem;
+    background-repeat: no-repeat, no-repeat;
+  }
 }
 
 .container {
